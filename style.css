@@ -69,7 +69,7 @@ html{
     cursor: pointer;
     display: none;
 }
-.scroll-up-btn{
+scroll-up-btn{
     position: fixed;
     height: 45px;
     width: 42px;
@@ -354,7 +354,7 @@ section .title::after{
 .design .title::after{
     content: "my design";
 }
-.design .carousel .card{
+.design.carousel .card{
     background: #222;
     border: 6px;
     padding: 25px 35px;
