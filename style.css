@@ -17,6 +17,7 @@ html{
 .navbar{
     position: fixed;
     width: 100%;
+    z-index: 999;
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
@@ -68,7 +69,7 @@ html{
     cursor: pointer;
     display: none;
 }
-scroll-up-btn{
+.scroll-up-btn{
     position: fixed;
     height: 45px;
     width: 42px;
@@ -141,12 +142,12 @@ scroll-up-btn{
 section{
     padding: 100px 0;
 }
-.about, .services, .skills, .teams .contact, footer{ 
+.about, .services, .experiences, .design .contact, footer{ 
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .services .serv-content,
-.skills .skills-content,
+.experiences .experiences-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -228,12 +229,12 @@ section .title::after{
 }
 
 /* services section styling */
-.services, .teams{
+.services, .design{
     color: #fff;
     background: #111;
 }
 .services .title::after,
-.teams .title::after{
+.design .title::after{
     background: #111;
     content: "I can provide";
 }
@@ -273,23 +274,23 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
-/* skills section styling */
+/* experiences section styling */
 
-.skills .title::after{
+.experiences .title::after{
     content: "expertness";
 }
-.skills .skills-content .column{
+.experiences .experiences-content .column{
     width: calc(50% - 30px);
 }
-.skills .skills-content .left .text{
+.experiences .experiences-content .left .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.skills .skills-content .left p{
+.experiences .experiences-content .left p{
     text-align: justify;
 }
-.skills .skills-content .left a{
+.experiences .experiences-content .left a{
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -301,30 +302,30 @@ section .title::after{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.skills .skills-content .left a:hover{
+.experiences .experiences-content .left a:hover{
     color: crimson;
     background: none;
 }
-.skills .skills-content .right .bars{
+.experiences .experiences-content .right .bars{
     margin-bottom: 15px;
 }
-.skills .skills-content .right .info{
+.experiences .experiences-content .right .info{
     display: flex;
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
-.skills .skills-content .right span{
+.experiences .experiences-content .right span{
     font-weight: 500;
     font-size: 18px;
 }
-.skills .skills-content .right .line{
+.experiences .experiences-content .right .line{
     height: 5px;
     width: 100%;
     background: lightgrey;
     position: relative;
 }
-.skills .skills-content .right .line::before{
+.experiences .experiences-content .right .line::before{
     content: "";
     position: absolute;
     height: 100%;
@@ -332,53 +333,53 @@ section .title::after{
     top: 0;
     background: crimson;
 }
-.skills-content .right .html::before{
+.experiences-content .right .html::before{
     width: 90%;
 }
-.skills-content .right .css::before{
+.experiences-content .right .css::before{
     width: 60%;
 }
-.skills-content .right .js::before{
+.experiences-content .right .js::before{
     width: 80%;
 }
-.skills-content .right .php::before{
+.experiences-content .right .php::before{
     width: 50%;
 }
-.skills-content .right .mysql::before{
+.experiences-content .right .mysql::before{
     width: 70%;
 }
 
 
-/* teams section styling */
-.teams .title::after{
+/* design section styling */
+.design .title::after{
     content: "my design";
 }
-.teams .carousel .card{
+.design .carousel .card{
     background: #222;
     border: 6px;
     padding: 25px 35px;
     text-align: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+.design .carousel .card:hover{
     background: crimson;
 }
-.teams .carousel .card .box{
+.design .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.design .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.design .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+.design .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -386,7 +387,7 @@ section .title::after{
     border: 5px solid crimson;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.design .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
